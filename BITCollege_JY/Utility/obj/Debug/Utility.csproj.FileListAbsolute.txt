@@ -1,0 +1,18 @@
+C:\Users\lauri\Desktop\Programming 3\School\BITCollege_22\Utility\bin\Debug\Utility.dll
+C:\Users\lauri\Desktop\Programming 3\School\BITCollege_22\Utility\bin\Debug\Utility.pdb
+C:\Users\lauri\Desktop\Programming 3\School\BITCollege_22\Utility\obj\Debug\Utility.csproj.AssemblyReference.cache
+C:\Users\lauri\Desktop\Programming 3\School\BITCollege_22\Utility\obj\Debug\Utility.csproj.CoreCompileInputs.cache
+C:\Users\lauri\Desktop\Programming 3\School\BITCollege_22\Utility\obj\Debug\Utility.dll
+C:\Users\lauri\Desktop\Programming 3\School\BITCollege_22\Utility\obj\Debug\Utility.pdb
+C:\Users\jocel\Desktop\Term3\Programming3\Module1\Assignments\assignment1-Jiajia Yang\BITCollege_JY\Utility\bin\Debug\Utility.dll
+C:\Users\jocel\Desktop\Term3\Programming3\Module1\Assignments\assignment1-Jiajia Yang\BITCollege_JY\Utility\bin\Debug\Utility.pdb
+C:\Users\jocel\Desktop\Term3\Programming3\Module1\Assignments\assignment1-Jiajia Yang\BITCollege_JY\Utility\obj\Debug\Utility.csproj.AssemblyReference.cache
+C:\Users\jocel\Desktop\Term3\Programming3\Module1\Assignments\assignment1-Jiajia Yang\BITCollege_JY\Utility\obj\Debug\Utility.csproj.CoreCompileInputs.cache
+C:\Users\jocel\Desktop\Term3\Programming3\Module1\Assignments\assignment1-Jiajia Yang\BITCollege_JY\Utility\obj\Debug\Utility.dll
+C:\Users\jocel\Desktop\Term3\Programming3\Module1\Assignments\assignment1-Jiajia Yang\BITCollege_JY\Utility\obj\Debug\Utility.pdb
+C:\Users\jocel\Desktop\Term3\Programming3\Module2\assignment\BITCollege_JY\Utility\bin\Debug\Utility.dll
+C:\Users\jocel\Desktop\Term3\Programming3\Module2\assignment\BITCollege_JY\Utility\bin\Debug\Utility.pdb
+C:\Users\jocel\Desktop\Term3\Programming3\Module2\assignment\BITCollege_JY\Utility\obj\Debug\Utility.csproj.AssemblyReference.cache
+C:\Users\jocel\Desktop\Term3\Programming3\Module2\assignment\BITCollege_JY\Utility\obj\Debug\Utility.csproj.CoreCompileInputs.cache
+C:\Users\jocel\Desktop\Term3\Programming3\Module2\assignment\BITCollege_JY\Utility\obj\Debug\Utility.dll
+C:\Users\jocel\Desktop\Term3\Programming3\Module2\assignment\BITCollege_JY\Utility\obj\Debug\Utility.pdb
