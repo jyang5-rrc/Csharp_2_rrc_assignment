@@ -18,7 +18,7 @@ namespace BITCollege_JY.Controllers
         // GET: SuspendedStates
         public ActionResult Index()
         {
-            return View(db.SuspendedState.ToList());
+            return View(SuspendedState.GetInstance());
         }
 
         // GET: SuspendedStates/Details/5

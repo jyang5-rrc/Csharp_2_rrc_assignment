@@ -1,4 +1,4 @@
-﻿using System;
+﻿        using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -52,8 +52,12 @@ namespace BITCollege_JY.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "StudentId,GradePointStateId,AcademicProgramId,StudentNumber,FirstName,LastName,Address,City,Province,DateCreated,GradePointAverage,OustandingFees,Notes")] Student student)
         {
+            student.SetNextStudentNumber();
+
             if (ModelState.IsValid)
             {
+                // call change state method
+                student.ChangeState();
                 db.Students.Add(student);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -90,6 +94,8 @@ namespace BITCollege_JY.Controllers
         {
             if (ModelState.IsValid)
             {
+                // call change state method
+                student.ChangeState();
                 db.Entry(student).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");

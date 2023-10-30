@@ -10,7 +10,6 @@
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "BITCollege_JY.Data.BITCollege_JYContext";
         }
 
         protected override void Seed(BITCollege_JY.Data.BITCollege_JYContext context)

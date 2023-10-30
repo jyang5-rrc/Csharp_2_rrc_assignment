@@ -135,6 +135,12 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HonoursStatesController.cs" />
     <Compile Include="Controllers\MasteryCoursesController.cs" />
+    <Compile Include="Controllers\NextAuditCoursesController.cs" />
+    <Compile Include="Controllers\NextGradedCoursesController.cs" />
+    <Compile Include="Controllers\NextMasteryCoursesController.cs" />
+    <Compile Include="Controllers\NextRegistrationsController.cs" />
+    <Compile Include="Controllers\NextStudentsController.cs" />
+    <Compile Include="Controllers\NextUniqueNumbersController.cs" />
     <Compile Include="Controllers\ProbationStatesController.cs" />
     <Compile Include="Controllers\RegistrationsController.cs" />
     <Compile Include="Controllers\RegularStatesController.cs" />
@@ -144,17 +150,26 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202309201530405_InitialCreate.cs" />
-    <Compile Include="Migrations\202309201530405_InitialCreate.designer.cs">
-      <DependentUpon>202309201530405_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\202310300013215_InitialCreate.cs" />
+    <Compile Include="Migrations\202310300013215_InitialCreate.designer.cs">
+      <DependentUpon>202310300013215_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202309221813378_202309201530405_InitialCreate.cs" />
-    <Compile Include="Migrations\202309221813378_202309201530405_InitialCreate.designer.cs">
-      <DependentUpon>202309221813378_202309201530405_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\202310300216546_StoredProcedures.cs" />
+    <Compile Include="Migrations\202310300216546_StoredProcedures.designer.cs">
+      <DependentUpon>202310300216546_StoredProcedures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202310300408506_setNextNumberMethod.cs" />
+    <Compile Include="Migrations\202310300408506_setNextNumberMethod.designer.cs">
+      <DependentUpon>202310300408506_setNextNumberMethod.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SchoolModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -165,6 +180,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <None Include="Migrations\StoredProcedures\create_next_number.sql" />
+    <None Include="Migrations\StoredProcedures\drop_next_number.sql" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -207,41 +224,57 @@
     <Content Include="Views\GradedCourses\Details.cshtml" />
     <Content Include="Views\GradedCourses\Edit.cshtml" />
     <Content Include="Views\GradedCourses\Index.cshtml" />
-    <Content Include="Views\HonoursStates\Create.cshtml" />
     <Content Include="Views\HonoursStates\Delete.cshtml" />
     <Content Include="Views\HonoursStates\Details.cshtml" />
     <Content Include="Views\HonoursStates\Edit.cshtml" />
-    <Content Include="Views\HonoursStates\Index.cshtml" />
     <Content Include="Views\MasteryCourses\Create.cshtml" />
     <Content Include="Views\MasteryCourses\Delete.cshtml" />
     <Content Include="Views\MasteryCourses\Details.cshtml" />
     <Content Include="Views\MasteryCourses\Edit.cshtml" />
     <Content Include="Views\MasteryCourses\Index.cshtml" />
-    <Content Include="Views\ProbationStates\Create.cshtml" />
     <Content Include="Views\ProbationStates\Delete.cshtml" />
     <Content Include="Views\ProbationStates\Details.cshtml" />
     <Content Include="Views\ProbationStates\Edit.cshtml" />
-    <Content Include="Views\ProbationStates\Index.cshtml" />
     <Content Include="Views\Registrations\Create.cshtml" />
     <Content Include="Views\Registrations\Delete.cshtml" />
     <Content Include="Views\Registrations\Details.cshtml" />
     <Content Include="Views\Registrations\Edit.cshtml" />
     <Content Include="Views\Registrations\Index.cshtml" />
-    <Content Include="Views\RegularStates\Create.cshtml" />
     <Content Include="Views\RegularStates\Delete.cshtml" />
     <Content Include="Views\RegularStates\Details.cshtml" />
     <Content Include="Views\RegularStates\Edit.cshtml" />
-    <Content Include="Views\RegularStates\Index.cshtml" />
     <Content Include="Views\Students\Create.cshtml" />
     <Content Include="Views\Students\Delete.cshtml" />
     <Content Include="Views\Students\Details.cshtml" />
     <Content Include="Views\Students\Edit.cshtml" />
     <Content Include="Views\Students\Index.cshtml" />
-    <Content Include="Views\SuspendedStates\Create.cshtml" />
     <Content Include="Views\SuspendedStates\Delete.cshtml" />
     <Content Include="Views\SuspendedStates\Details.cshtml" />
     <Content Include="Views\SuspendedStates\Edit.cshtml" />
-    <Content Include="Views\SuspendedStates\Index.cshtml" />
+    <Content Include="Views\HonoursStates\index.cshtml" />
+    <Content Include="Views\ProbationStates\index.cshtml" />
+    <Content Include="Views\RegularStates\index.cshtml" />
+    <Content Include="Views\SuspendedStates\index.cshtml" />
+    <Content Include="Views\NextStudents\Delete.cshtml" />
+    <Content Include="Views\NextStudents\Details.cshtml" />
+    <Content Include="Views\NextStudents\Edit.cshtml" />
+    <Content Include="Views\NextAuditCourses\Delete.cshtml" />
+    <Content Include="Views\NextAuditCourses\Details.cshtml" />
+    <Content Include="Views\NextAuditCourses\Edit.cshtml" />
+    <Content Include="Views\NextGradedCourses\Delete.cshtml" />
+    <Content Include="Views\NextGradedCourses\Details.cshtml" />
+    <Content Include="Views\NextGradedCourses\Edit.cshtml" />
+    <Content Include="Views\NextMasteryCourses\Delete.cshtml" />
+    <Content Include="Views\NextMasteryCourses\Details.cshtml" />
+    <Content Include="Views\NextMasteryCourses\Edit.cshtml" />
+    <Content Include="Views\NextRegistrations\Delete.cshtml" />
+    <Content Include="Views\NextRegistrations\Details.cshtml" />
+    <Content Include="Views\NextRegistrations\Edit.cshtml" />
+    <Content Include="Views\NextAuditCourses\Index.cshtml" />
+    <Content Include="Views\NextGradedCourses\Index.cshtml" />
+    <Content Include="Views\NextMasteryCourses\Index.cshtml" />
+    <Content Include="Views\NextRegistrations\Index.cshtml" />
+    <Content Include="Views\NextStudents\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -268,11 +301,18 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202309201530405_InitialCreate.resx">
-      <DependentUpon>202309201530405_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202310300013215_InitialCreate.resx">
+      <DependentUpon>202310300013215_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202309221813378_202309201530405_InitialCreate.resx">
-      <DependentUpon>202309221813378_202309201530405_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202310300216546_StoredProcedures.resx">
+      <DependentUpon>202310300216546_StoredProcedures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202310300408506_setNextNumberMethod.resx">
+      <DependentUpon>202310300408506_setNextNumberMethod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

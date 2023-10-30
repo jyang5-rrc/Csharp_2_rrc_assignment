@@ -42,5 +42,17 @@ namespace BITCollege_JY.Data
         public System.Data.Entity.DbSet<BITCollege_JY.Models.Registration> Registrations { get; set; }
 
         public System.Data.Entity.DbSet<BITCollege_JY.Models.Student> Students { get; set; }
+
+        public System.Data.Entity.DbSet<BITCollege_JY.Models.NextUniqueNumber> NextUniqueNumbers { get; set; }
+
+        public System.Data.Entity.DbSet<BITCollege_JY.Models.NextStudent> NextStudents { get; set; }
+
+        public System.Data.Entity.DbSet<BITCollege_JY.Models.NextAuditCourse> NextAuditCourses { get; set; }
+
+        public System.Data.Entity.DbSet<BITCollege_JY.Models.NextGradedCourse> NextGradedCourses { get; set; }
+
+        public System.Data.Entity.DbSet<BITCollege_JY.Models.NextMasteryCourse> NextMasteryCourses { get; set; }
+
+        public System.Data.Entity.DbSet<BITCollege_JY.Models.NextRegistration> NextRegistrations { get; set; }
     }
 }
